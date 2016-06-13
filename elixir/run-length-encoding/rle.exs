@@ -8,14 +8,20 @@ defmodule RunLengthEncoder do
   """
   @spec encode(String.t) :: String.t
   def encode(""), do: "" 
-  def encode(string) do
-    "foo"
-  end
-  defp str_count([],accum,_) do
-  end
+  def encode(string), do:
+    ({first, rest} = String.next_codepoint(string)
+    _encode({first, String.next_codepoint(rest)}, 1, ""))
+  defp _encode({cur, {nil}}, cur_count, accum), do:
+    (accum <> cur_count <> cur)
+  defp _encode({cur, nil}, cur_count, accum), do:
+    (accum <> cur_count <> cur)
+  defp _encode({cur, {next, rest}}, cur_count, accum) when cur == next, do:
+    _encode({next, String.next_codepoint(rest)}, cur_count + 1, accum)
+  defp _encode({cur, {next, rest}}, cur_count, accum), do:
+    _encode({next, String.next_codepoint(rest)}, 1, accum <> cur_count <> cur)
 
   @spec decode(String.t) :: String.t
   def decode(string) do
-
+    string
   end
 end
