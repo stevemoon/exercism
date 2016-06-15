@@ -122,11 +122,6 @@ defmodule ListOpsTest do
       Enum.to_list(1..2_000_000)
   end
 
-<<<<<<< HEAD
-  #@tag :pending
-=======
-  #  @tag :pending
->>>>>>> FETCH_HEAD
   test "concat of empty list of lists" do
     assert L.concat([]) == []
   end
