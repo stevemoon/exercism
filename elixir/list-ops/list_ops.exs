@@ -18,28 +18,34 @@ defmodule ListOps do
 
 
   @spec map(list, (any -> any)) :: list
-  def map(l, f) do
-
-  end
+  def map([], _f), do: []
+  def map([head | tail], f), do: [ f.(head) | map(tail, f) ] 
+    
 
   @spec filter(list, (any -> as_boolean(term))) :: list
-  def filter(l, f) do
-
+  def filter([], _f), do: []
+  def filter([head | tail], f) do 
+    if f.(head), do: [ head | filter(tail, f)],
+    else: filter(tail, f)
   end
 
   @type acc :: any
   @spec reduce(list, acc, ((any, acc) -> acc)) :: acc
-  def reduce(l, acc, f) do
-
-  end
+  def reduce([], acc, _f), do: acc
+  def reduce([head | tail], acc, f), do: reduce(tail, f.(head, acc), f)
 
   @spec append(list, list) :: list
-  def append(a, b) do
-
-  end
+  def append([], b), do: b
+  def append(a, []), do: a
+  def append(a, b), do: _append(a, b, []) |> reverse
+  defp _append([], [], accum), do: accum
+  defp _append([], b, accum), do: _append(b, [], accum)
+  defp _append([head | tail], b, accum), do: _append(tail, b, [head | accum])
 
   @spec concat([[any]]) :: [any]
-  def concat(ll) do
+  def concat([]), do: []
+  def concat(ll), do: _concat(ll, [])
+  defp _concat([], accum), do: accum
+  defp _concat([head | tail], accum), do: append(head, _concat(tail, accum))
 
-  end
 end
