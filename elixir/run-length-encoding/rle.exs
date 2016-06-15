@@ -21,8 +21,7 @@ defmodule RunLengthEncoder do
     _encode({next, String.next_codepoint(rest)}, 1, (accum <> to_string(cur_count) <> cur))
 
   @spec decode(String.t) :: String.t
-  def decode(""), do: ""
-  def decode(string), do: _decode(String.codepoints(string), "")
+  def decode(string), do: _decode(Regex.scan(~r{(\d+)([A-Z])}, string), "")
   def _decode([], accum), do: accum
-  def _decode([count, char | rest], accum), do: _decode(rest, accum <> String.duplicate(char, String.to_integer(count)))
+  def _decode([[_, count, char] | rest], accum), do: _decode(rest, accum <> String.duplicate(char, String.to_integer(count)))
 end
