@@ -17,6 +17,14 @@ defmodule Change do
 
   @spec generate(integer, list) :: {:ok, map} | :error
   def generate(amount, values) do
+    generate2(amount, Enum.reverse(Enum.sort(values)), %{})
+  end
 
+  defp generate2(0, _, results), do: {:ok, results}
+  defp generate2(_, [], _), do: :error
+  defp generate2(val, [coin | rest], results) do
+      remaining = rem(val, coin)
+      coin_count = div(val, coin)
+      generate2(remaining, rest, Map.put(results, coin, coin_count))
   end
 end
