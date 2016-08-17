@@ -3,7 +3,8 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
-ExUnit.configure exclude: :pending, trace: true
+ExUnit.configure trace: true
+#ExUnit.configure exclude: :pending, trace: true
 
 # NOTE: :math.pow/2 doesn't do what you'd expect:
 # `:math.pow(2, 64) == :math.pow(2, 64) - 1` is true.

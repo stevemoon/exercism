@@ -3,7 +3,8 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
-ExUnit.configure exclude: :pending, trace: true
+ExUnit.configure trace: true
+#ExUnit.configure exclude: :pending, trace: true
 
 defmodule ChangeTest do
   use ExUnit.Case
@@ -12,7 +13,7 @@ defmodule ChangeTest do
     assert Change.generate(1, []) == :error
   end
 
-  @tag :pending
+  #  @tag :pending
   test "generates the correct change when only one coin type is needed" do
     change = %{1 => 5, 10 => 0}
     assert Change.generate(5, [1, 10]) == {:ok, change}

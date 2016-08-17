@@ -3,7 +3,8 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
-ExUnit.configure exclude: :pending, trace: true
+ExUnit.configure trace: true
+#ExUnit.configure exclude: :pending, trace: true
 
 defmodule MeetupTest do
   use ExUnit.Case
@@ -13,102 +14,102 @@ defmodule MeetupTest do
     assert Meetup.meetup(2013, 5, :monday, :teenth) == {2013, 5, 13}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "monteenth of august 2013" do
     assert Meetup.meetup(2013, 8, :monday, :teenth) == {2013, 8, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "monteenth of september 2013" do
     assert Meetup.meetup(2013, 9, :monday, :teenth) == {2013, 9, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "tuesteenth of march 2013" do
     assert Meetup.meetup(2013, 3, :tuesday, :teenth) == {2013, 3, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "tuesteenth of april 2013" do
     assert Meetup.meetup(2013, 4, :tuesday, :teenth) == {2013, 4, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "tuesteenth of august 2013" do
     assert Meetup.meetup(2013, 8, :tuesday, :teenth) == {2013, 8, 13}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "wednesteenth of january 2013" do
     assert Meetup.meetup(2013, 1, :wednesday, :teenth) == {2013, 1, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "wednesteenth of february 2013" do
     assert Meetup.meetup(2013, 2, :wednesday, :teenth) == {2013, 2, 13}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "wednesteenth of june 2013" do
     assert Meetup.meetup(2013, 6, :wednesday, :teenth) == {2013, 6, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "thursteenth of may 2013" do
     assert Meetup.meetup(2013, 5, :thursday, :teenth) == {2013, 5, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "thursteenth of june 2013" do
     assert Meetup.meetup(2013, 6, :thursday, :teenth) == {2013, 6, 13}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "thursteenth of september 2013" do
     assert Meetup.meetup(2013, 9, :thursday, :teenth) == {2013, 9, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "friteenth of april 2013" do
     assert Meetup.meetup(2013, 4, :friday, :teenth) == {2013, 4, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "friteenth of august 2013" do
     assert Meetup.meetup(2013, 8, :friday, :teenth) == {2013, 8, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "friteenth of september 2013" do
     assert Meetup.meetup(2013, 9, :friday, :teenth) == {2013, 9, 13}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "saturteenth of february 2013" do
     assert Meetup.meetup(2013, 2, :saturday, :teenth) == {2013, 2, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "saturteenth of april 2013" do
     assert Meetup.meetup(2013, 4, :saturday, :teenth) == {2013, 4, 13}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "saturteenth of october 2013" do
     assert Meetup.meetup(2013, 10, :saturday, :teenth) == {2013, 10, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "sunteenth of may 2013" do
     assert Meetup.meetup(2013, 5, :sunday, :teenth) == {2013, 5, 19}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "sunteenth of june 2013" do
     assert Meetup.meetup(2013, 6, :sunday, :teenth) == {2013, 6, 16}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "sunteenth of october 2013" do
     assert Meetup.meetup(2013, 10, :sunday, :teenth) == {2013, 10, 13}
   end
@@ -388,77 +389,77 @@ defmodule MeetupTest do
     assert Meetup.meetup(2013, 3, :sunday, :fourth) == {2013, 3, 24}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "fourth sunday of april 2013" do
     assert Meetup.meetup(2013, 4, :sunday, :fourth) == {2013, 4, 28}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last monday of march 2013" do
     assert Meetup.meetup(2013, 3, :monday, :last) == {2013, 3, 25}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last monday of april 2013" do
     assert Meetup.meetup(2013, 4, :monday, :last) == {2013, 4, 29}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last tuesday of may 2013" do
     assert Meetup.meetup(2013, 5, :tuesday, :last) == {2013, 5, 28}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last tuesday of june 2013" do
     assert Meetup.meetup(2013, 6, :tuesday, :last) == {2013, 6, 25}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last wednesday of july 2013" do
     assert Meetup.meetup(2013, 7, :wednesday, :last) == {2013, 7, 31}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last wednesday of august 2013" do
     assert Meetup.meetup(2013, 8, :wednesday, :last) == {2013, 8, 28}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last thursday of september 2013" do
     assert Meetup.meetup(2013, 9, :thursday, :last) == {2013, 9, 26}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last thursday of october 2013" do
     assert Meetup.meetup(2013, 10, :thursday, :last) == {2013, 10, 31}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last friday of november 2013" do
     assert Meetup.meetup(2013, 11, :friday, :last) == {2013, 11, 29}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last friday of december 2013" do
     assert Meetup.meetup(2013, 12, :friday, :last) == {2013, 12, 27}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last saturday of january 2013" do
     assert Meetup.meetup(2013, 1, :saturday, :last) == {2013, 1, 26}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last saturday of february 2013" do
     assert Meetup.meetup(2013, 2, :saturday, :last) == {2013, 2, 23}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last sunday of march 2013" do
     assert Meetup.meetup(2013, 3, :sunday, :last) == {2013, 3, 31}
   end
 
-  @tag :pending
+  #  @tag :pending
   test "last sunday of april 2013" do
     assert Meetup.meetup(2013, 4, :sunday, :last) == {2013, 4, 28}
   end
