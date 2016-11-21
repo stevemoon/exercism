@@ -4,8 +4,18 @@ defmodule SumOfMultiples do
   """
   @spec to(non_neg_integer, [non_neg_integer]) :: non_neg_integer
   def to(limit, factors) do
-    for x <- 1..limit, y <- factors, do: {x, y}
+    foo = for x <- 1..limit, y <- factors, do: {x, y}
+    sum(foo, 0)
   end
+  defp sum([], accum), do: accum
+  #defp sum({factor, test}, accum), do: sum([{factor, test}], accum)
+  defp sum([{factor, test} | rest], accum) do
+    case rem(test, factor) do
+      0 -> sum(rest, accum + factor)
+      _ -> sum(rest, accum)
+    end
+  end
+
   #defp factor_of?(testnum, factor)
   #  case rem(testnum, factor) do
     #    0 -> :true
