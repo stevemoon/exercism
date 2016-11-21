@@ -17,4 +17,8 @@ defmodule DNA do
     _ham(t1, t2, count)
   defp _ham([h1 | t1], [h2 | t2], count) when h1 != h2, do: 
     _ham(t1, t2, count + 1)
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

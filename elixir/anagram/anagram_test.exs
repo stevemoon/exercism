@@ -1,9 +1,18 @@
 if !System.get_env("EXERCISM_TEST_EXAMPLES") do
+<<<<<<< HEAD
   Code.load_file("anagram.exs", __DIR__)
 end
 
 ExUnit.start
 ExUnit.configure exclude: :pending, trace: true
+=======
+  Code.load_file("anagram.exs")
+end
+
+ExUnit.start
+ExUnit.configure trace: true
+#ExUnit.configure exclude: :pending, trace: true
+>>>>>>> origin/master
 
 defmodule AnagramTest do
   use ExUnit.Case

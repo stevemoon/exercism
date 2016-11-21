@@ -1,9 +1,18 @@
 if !System.get_env("EXERCISM_TEST_EXAMPLES") do
+<<<<<<< HEAD
   Code.load_file("accumulate.exs", __DIR__)
 end
 
 ExUnit.start
 ExUnit.configure exclude: :pending, trace: true
+=======
+  Code.load_file("accumulate.exs")
+end
+
+ExUnit.start
+#ExUnit.configure exclude: :pending, trace: true
+ExUnit.configure trace: true
+>>>>>>> origin/master
 
 defmodule AccumulateTest do
   use ExUnit.Case
@@ -32,10 +41,17 @@ defmodule AccumulateTest do
   end
 
   @tag :pending
+<<<<<<< HEAD
   test "nested accumulate" do
     chars = ~w(a b c)
     nums  = ~w(1 2 3)
     fun = fn(c) -> Accumulate.accumulate(nums, &(c <> &1)) end
+=======
+  test "accumulate recursively" do
+    chars = ~w(a b c)
+    nums  = ~w(1 2 3)
+    fun = fn(c) -> for num <- nums, do: c <> num end
+>>>>>>> origin/master
     expected = [["a1", "a2", "a3"], ["b1", "b2", "b3"], ["c1", "c2", "c3"]]
     assert Accumulate.accumulate(chars, fun) == expected
   end

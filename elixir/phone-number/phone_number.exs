@@ -84,4 +84,8 @@ defmodule Phone do
     ext = String.slice(pnum, 6..9)
     "(#{ac}) #{pfx}-#{ext}"
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

@@ -74,7 +74,10 @@ see the [help page](http://exercism.io/languages/elixir).
 ## Source
 
 A pairing session with Phil Battos at gSchool [http://gschool.it](http://gschool.it)
+<<<<<<< HEAD
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
+=======
+>>>>>>> origin/master

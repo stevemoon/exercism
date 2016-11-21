@@ -3,7 +3,11 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
+<<<<<<< HEAD
 ExUnit.configure exclude: :pending, trace: true
+=======
+ExUnit.configure trace: true
+>>>>>>> origin/master
 
 defmodule ScrabbleScoreTest do
   use ExUnit.Case
@@ -13,12 +17,20 @@ defmodule ScrabbleScoreTest do
     assert Scrabble.score("") == 0
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "whitespace scores zero" do
     assert Scrabble.score(" \t\n") == 0
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  # @tag :pending
+>>>>>>> origin/master
   test "scores very short word" do
     assert Scrabble.score("a") == 1
   end

@@ -46,7 +46,10 @@ see the [help page](http://exercism.io/languages/elixir).
 ## Source
 
 Inspired by the Extreme Startup game [https://github.com/rchatley/extreme_startup](https://github.com/rchatley/extreme_startup)
+<<<<<<< HEAD
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
+=======
+>>>>>>> origin/master

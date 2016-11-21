@@ -25,4 +25,10 @@ defmodule Sublist do
       _compare(shorter, tl(longer))
     end
   end
+<<<<<<< HEAD
 end
+=======
+end
+
+
+>>>>>>> origin/master

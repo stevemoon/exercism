@@ -66,7 +66,10 @@ see the [help page](http://exercism.io/languages/elixir).
 ## Source
 
 The Calculating DNA Nucleotides_problem at Rosalind [http://rosalind.info/problems/dna/](http://rosalind.info/problems/dna/)
+<<<<<<< HEAD
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
+=======
+>>>>>>> origin/master

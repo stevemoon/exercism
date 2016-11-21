@@ -58,7 +58,10 @@ For more detailed information about the Elixir track, please
 see the [help page](http://exercism.io/languages/elixir).
 
 
+<<<<<<< HEAD
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
+=======
+>>>>>>> origin/master

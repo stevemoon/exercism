@@ -10,4 +10,8 @@ defmodule Anagram do
   end
   defp sig(word), do:
     word |> String.downcase |> to_char_list |> Enum.sort |> to_string
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

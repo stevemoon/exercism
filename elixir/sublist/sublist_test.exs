@@ -1,9 +1,18 @@
 if !System.get_env("EXERCISM_TEST_EXAMPLES") do
+<<<<<<< HEAD
   Code.load_file("sublist.exs", __DIR__)
 end
 
 ExUnit.start
 ExUnit.configure exclude: :pending, trace: true
+=======
+  Code.load_file("sublist.exs")
+end
+
+ExUnit.start
+ExUnit.configure  trace: true
+#ExUnit.configure exclude: :pending, trace: true
+>>>>>>> origin/master
 
 defmodule SublistTest do
   use ExUnit.Case
@@ -27,7 +36,11 @@ defmodule SublistTest do
     assert Sublist.compare([1], [2]) == :unequal
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #@tag :pending
+>>>>>>> origin/master
   test "comparing massive equal lists" do
     l = Enum.to_list(1..1_000_000)
     assert Sublist.compare(l, l) == :equal

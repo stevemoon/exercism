@@ -34,4 +34,8 @@ defmodule School do
   def sort(db) do
     Map.to_list(db)
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

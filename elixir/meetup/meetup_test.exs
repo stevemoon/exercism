@@ -3,7 +3,12 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
+<<<<<<< HEAD
 ExUnit.configure exclude: :pending, trace: true
+=======
+ExUnit.configure trace: true
+#ExUnit.configure exclude: :pending, trace: true
+>>>>>>> origin/master
 
 defmodule MeetupTest do
   use ExUnit.Case
@@ -13,102 +18,182 @@ defmodule MeetupTest do
     assert Meetup.meetup(2013, 5, :monday, :teenth) == {2013, 5, 13}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "monteenth of august 2013" do
     assert Meetup.meetup(2013, 8, :monday, :teenth) == {2013, 8, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "monteenth of september 2013" do
     assert Meetup.meetup(2013, 9, :monday, :teenth) == {2013, 9, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "tuesteenth of march 2013" do
     assert Meetup.meetup(2013, 3, :tuesday, :teenth) == {2013, 3, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "tuesteenth of april 2013" do
     assert Meetup.meetup(2013, 4, :tuesday, :teenth) == {2013, 4, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "tuesteenth of august 2013" do
     assert Meetup.meetup(2013, 8, :tuesday, :teenth) == {2013, 8, 13}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "wednesteenth of january 2013" do
     assert Meetup.meetup(2013, 1, :wednesday, :teenth) == {2013, 1, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "wednesteenth of february 2013" do
     assert Meetup.meetup(2013, 2, :wednesday, :teenth) == {2013, 2, 13}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "wednesteenth of june 2013" do
     assert Meetup.meetup(2013, 6, :wednesday, :teenth) == {2013, 6, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "thursteenth of may 2013" do
     assert Meetup.meetup(2013, 5, :thursday, :teenth) == {2013, 5, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "thursteenth of june 2013" do
     assert Meetup.meetup(2013, 6, :thursday, :teenth) == {2013, 6, 13}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "thursteenth of september 2013" do
     assert Meetup.meetup(2013, 9, :thursday, :teenth) == {2013, 9, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "friteenth of april 2013" do
     assert Meetup.meetup(2013, 4, :friday, :teenth) == {2013, 4, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "friteenth of august 2013" do
     assert Meetup.meetup(2013, 8, :friday, :teenth) == {2013, 8, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "friteenth of september 2013" do
     assert Meetup.meetup(2013, 9, :friday, :teenth) == {2013, 9, 13}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "saturteenth of february 2013" do
     assert Meetup.meetup(2013, 2, :saturday, :teenth) == {2013, 2, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "saturteenth of april 2013" do
     assert Meetup.meetup(2013, 4, :saturday, :teenth) == {2013, 4, 13}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "saturteenth of october 2013" do
     assert Meetup.meetup(2013, 10, :saturday, :teenth) == {2013, 10, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "sunteenth of may 2013" do
     assert Meetup.meetup(2013, 5, :sunday, :teenth) == {2013, 5, 19}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "sunteenth of june 2013" do
     assert Meetup.meetup(2013, 6, :sunday, :teenth) == {2013, 6, 16}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "sunteenth of october 2013" do
     assert Meetup.meetup(2013, 10, :sunday, :teenth) == {2013, 10, 13}
   end
@@ -388,77 +473,137 @@ defmodule MeetupTest do
     assert Meetup.meetup(2013, 3, :sunday, :fourth) == {2013, 3, 24}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "fourth sunday of april 2013" do
     assert Meetup.meetup(2013, 4, :sunday, :fourth) == {2013, 4, 28}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last monday of march 2013" do
     assert Meetup.meetup(2013, 3, :monday, :last) == {2013, 3, 25}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last monday of april 2013" do
     assert Meetup.meetup(2013, 4, :monday, :last) == {2013, 4, 29}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last tuesday of may 2013" do
     assert Meetup.meetup(2013, 5, :tuesday, :last) == {2013, 5, 28}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last tuesday of june 2013" do
     assert Meetup.meetup(2013, 6, :tuesday, :last) == {2013, 6, 25}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last wednesday of july 2013" do
     assert Meetup.meetup(2013, 7, :wednesday, :last) == {2013, 7, 31}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last wednesday of august 2013" do
     assert Meetup.meetup(2013, 8, :wednesday, :last) == {2013, 8, 28}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last thursday of september 2013" do
     assert Meetup.meetup(2013, 9, :thursday, :last) == {2013, 9, 26}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last thursday of october 2013" do
     assert Meetup.meetup(2013, 10, :thursday, :last) == {2013, 10, 31}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last friday of november 2013" do
     assert Meetup.meetup(2013, 11, :friday, :last) == {2013, 11, 29}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last friday of december 2013" do
     assert Meetup.meetup(2013, 12, :friday, :last) == {2013, 12, 27}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last saturday of january 2013" do
     assert Meetup.meetup(2013, 1, :saturday, :last) == {2013, 1, 26}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last saturday of february 2013" do
     assert Meetup.meetup(2013, 2, :saturday, :last) == {2013, 2, 23}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last sunday of march 2013" do
     assert Meetup.meetup(2013, 3, :sunday, :last) == {2013, 3, 31}
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "last sunday of april 2013" do
     assert Meetup.meetup(2013, 4, :sunday, :last) == {2013, 4, 28}
   end

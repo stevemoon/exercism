@@ -57,7 +57,10 @@ see the [help page](http://exercism.io/languages/elixir).
 ## Source
 
 Jeremy Hinegardner mentioned a Boulder meetup that happens on the Wednesteenth of every month [https://twitter.com/copiousfreetime](https://twitter.com/copiousfreetime)
+<<<<<<< HEAD
 
 ## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
+=======
+>>>>>>> origin/master

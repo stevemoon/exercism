@@ -19,4 +19,8 @@ defmodule SpaceAge do
   def age_on(planet, seconds) do
     seconds / @seconds_per_orbit[planet]
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

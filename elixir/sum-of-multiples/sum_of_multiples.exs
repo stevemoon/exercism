@@ -4,6 +4,7 @@ defmodule SumOfMultiples do
   """
   @spec to(non_neg_integer, [non_neg_integer]) :: non_neg_integer
   def to(limit, factors) do
+<<<<<<< HEAD
     foo = for x <- 1..limit, y <- factors, do: {x, y}
     sum(foo, 0)
   end
@@ -23,3 +24,8 @@ defmodule SumOfMultiples do
     #end
     end
 
+=======
+
+  end
+end
+>>>>>>> origin/master

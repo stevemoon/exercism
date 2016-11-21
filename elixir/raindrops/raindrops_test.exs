@@ -3,7 +3,11 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start
+<<<<<<< HEAD
 ExUnit.configure exclude: :pending, trace: true
+=======
+ExUnit.configure trace: true
+>>>>>>> origin/master
 
 defmodule RaindropsTest do
   use ExUnit.Case
@@ -13,7 +17,11 @@ defmodule RaindropsTest do
     assert Raindrops.convert(1) == "1"
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "3" do
     assert Raindrops.convert(3) == "Pling"
   end

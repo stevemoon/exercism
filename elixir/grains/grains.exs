@@ -20,4 +20,8 @@ defmodule Grains do
   defp power(x, n) when n > 0, do: power(x, n, 1)
   defp power(_, n, acc) when n == 0, do: acc
   defp power(x, n, acc), do: power(x, n - 1, x * acc)
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

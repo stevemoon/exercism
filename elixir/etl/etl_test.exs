@@ -1,5 +1,9 @@
 if !System.get_env("EXERCISM_TEST_EXAMPLES") do
+<<<<<<< HEAD
   Code.load_file("etl.exs", __DIR__)
+=======
+  Code.load_file("etl.exs")
+>>>>>>> origin/master
 end
 
 ExUnit.start
@@ -16,7 +20,11 @@ defmodule TransformTest do
     assert ETL.transform(old) == expected
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #  @tag :pending
+>>>>>>> origin/master
   test "transform more values" do
     old = %{1 => ["WORLD", "GSCHOOLERS"]}
     expected = %{"world" => 1, "gschoolers" => 1}
@@ -24,7 +32,11 @@ defmodule TransformTest do
     assert ETL.transform(old) == expected
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #@tag :pending
+>>>>>>> origin/master
   test "more keys" do
     old = %{1 => ["APPLE", "ARTICHOKE"], 2 => ["BOAT", "BALLERINA"]}
     expected = %{
@@ -37,7 +49,11 @@ defmodule TransformTest do
     assert ETL.transform(old) == expected
   end
 
+<<<<<<< HEAD
   @tag :pending
+=======
+  #@tag :pending
+>>>>>>> origin/master
   test "full dataset" do
     old = %{
       1 =>  ~W(A E I O U L N R S T),

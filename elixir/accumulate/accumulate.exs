@@ -25,4 +25,8 @@ defmodule Accumulate do
   defp _reverse([], accum), do: accum
   defp _reverse([head | tail], accum), do: _reverse(tail, [head | accum])
 
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

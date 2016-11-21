@@ -19,4 +19,8 @@ defmodule BracketPush do
   defp _close_brkt(?{), do: ?}
   defp _close_brkt(?(), do: ?)
   defp _close_brkt(_), do: :err_not_open_brkt
+<<<<<<< HEAD
   end
+=======
+  end
+>>>>>>> origin/master

@@ -49,4 +49,8 @@ defmodule DNA do
   defp _hist([], _, result), do: result
   defp _hist([nuc | rest], strand, result), do:
    _hist(rest, strand, [{nuc, count(strand, nuc)} | result ])
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

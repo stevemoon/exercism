@@ -16,6 +16,7 @@ defmodule Change do
   """
 
   @spec generate(integer, list) :: {:ok, map} | :error
+<<<<<<< HEAD
   def generate(amount, values), do: generate(amount, values, %{})
   def generate(_, [], _), do: :error
   def generate(amount, values, bad) do
@@ -24,6 +25,10 @@ defmodule Change do
       {:ok, change} -> {:ok, Map.merge(change, bad)}
       :error -> generate(amount, tl(sorted_values), Map.put(bad, hd(sorted_values), 0))
     end
+=======
+  def generate(amount, values) do
+    generate2(amount, Enum.reverse(Enum.sort(values)), %{})
+>>>>>>> origin/master
   end
 
   defp generate2(0, _, results), do: {:ok, results}

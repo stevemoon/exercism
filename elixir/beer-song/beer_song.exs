@@ -36,4 +36,8 @@ defmodule BeerSong do
     Enum.reduce(range, "", fn x, acc -> acc <> "\n" <>  verse(x)  end) |>
     String.trim_leading("\n")
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

@@ -21,4 +21,8 @@ defmodule Scrabble do
       false -> score(t, score)
   end
 end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

@@ -47,4 +47,8 @@ defmodule Meetup do
     day = Enum.fetch!(day_list, pos)
     {year, month, day}
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master

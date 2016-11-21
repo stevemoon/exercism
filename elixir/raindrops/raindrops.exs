@@ -24,4 +24,8 @@ defmodule Raindrops do
   end
   defp output({number, []}), do: to_string(number)
   defp output({number, results}), do: Enum.join(results)
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> origin/master
